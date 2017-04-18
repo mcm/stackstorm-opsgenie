@@ -1,0 +1,22 @@
+---
+description: "Get an Alert from OpsGenie"
+enabled: true
+entry_point: "get_alert.py"
+name: "get_alert"
+pack: "opsgenie"
+
+runner_type: "python-script"
+
+parameters:
+  alias:
+    type: "string"
+    description: "Alias of the alert"
+    required: false
+  alertId:
+    type: "string"
+    description: "ID of the alert"
+    required: false
+  tinyId:
+    type: "integer"
+    description: "Tiny ID of the alert"
+    required: false
